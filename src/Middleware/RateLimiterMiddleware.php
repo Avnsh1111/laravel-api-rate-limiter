@@ -3,7 +3,7 @@
 namespace Avnsh1111\LaravelApiRateLimiter\Middleware;
 
 use Closure;
-use Avnsh1111\LaravelApiRateLimiter\RateLimiter;
+use Avnsh1111\LaravelApiRateLimiter\LaravelApiRateLimiter;
 use Illuminate\Http\Response;
 
 class RateLimiterMiddleware
@@ -11,7 +11,7 @@ class RateLimiterMiddleware
     protected $rateLimiter;
 
 
-    public function __construct(RateLimiter $rateLimiter)
+    public function __construct(LaravelApiRateLimiter $rateLimiter)
     {
         $this->rateLimiter = $rateLimiter;
     }
