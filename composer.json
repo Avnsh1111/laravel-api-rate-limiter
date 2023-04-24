@@ -25,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Avnsh1111\\LaravelApiRateLimiter\\ServiceProvider"
+                "Avnsh1111\\LaravelApiRateLimiter\\RateLimiterServiceProvider"
             ],
             "aliases": {
-                "RateLimiter": "Avnsh1111\\LaravelApiRateLimiter\\Facades\\RateLimiter"
+                "RateLimiter": "Avnsh1111\\LaravelApiRateLimiter\\RateLimiter"
             }
         }
     },
