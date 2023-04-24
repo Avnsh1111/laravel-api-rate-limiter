@@ -25,7 +25,7 @@
    "extra": {
         "laravel": {
           "providers": [
-            "Avnsh1111\\LaravelApiRateLimiter\\RateLimiterServiceProvider"
+            "Avnsh1111\\LaravelApiRateLimiter\\Src\\RateLimiterServiceProvider"
           ]
         }
     },
