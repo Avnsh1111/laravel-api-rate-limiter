@@ -4,7 +4,7 @@ namespace Avnsh1111\LaravelApiRateLimiter;
 
 use Illuminate\Support\ServiceProvider;
 
-class RateLimiterServiceProvider extends ServiceProvider
+class LaravelApiRateLimiterServiceProvider extends ServiceProvider
 {
     public function boot()
     {
