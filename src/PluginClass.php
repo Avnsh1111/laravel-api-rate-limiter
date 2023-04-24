@@ -8,7 +8,7 @@ use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginEvents;
 
-class YourPluginClass implements PluginInterface, EventSubscriberInterface
+class PluginClass implements PluginInterface, EventSubscriberInterface
 {
     protected $composer;
     protected $io;
