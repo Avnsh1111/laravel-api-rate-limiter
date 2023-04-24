@@ -5,7 +5,7 @@ namespace Avnsh1111\LaravelApiRateLimiter;
 use Illuminate\Cache\RateLimiter as CacheRateLimiter;
 use Illuminate\Http\Request;
 
-class RateLimiter
+class LaravelApiRateLimiter
 {
     protected $cacheRateLimiter;
 
