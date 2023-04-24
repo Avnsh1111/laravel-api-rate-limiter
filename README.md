@@ -22,10 +22,19 @@ composer require avnsh1111/laravel-api-rate-limiter
 
 ## Configuration
 
-After installing the package, publish the configuration file to configure the rate limiting settings:
+Before publishing the configuration file, you need to add the `LaravelApiRateLimiterServiceProvider` to the `providers` array in your `config/app.php`:
+
+```php
+'providers' => [
+    // ...
+    Avnsh1111\LaravelApiRateLimiter\LaravelApiRateLimiterServiceProvider::class,
+],
+```
+
+After adding the ServiceProvider, publish the configuration file to configure the rate limiting settings:
 
 ```bash
-php artisan vendor:publish --provider="Avnsh1111\LaravelApiRateLimiter\ServiceProvider"
+php artisan vendor:publish --provider="Avnsh1111\LaravelApiRateLimiter\LaravelApiRateLimiterServiceProvider"
 ```
 
 This will create a `laravel-api-rate-limiter.php` configuration file in your `config` folder.
