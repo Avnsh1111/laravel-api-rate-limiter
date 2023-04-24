@@ -1,0 +1,34 @@
+{
+    "name": "avnsh1111/laravel-api-rate-limiter",
+    "description": "Laravel API Rate Limiter is an open-source package designed to help developers easily implement and manage rate limiting for their API endpoints in Laravel applications. This package aims to provide a flexible and configurable solution for protecting APIs from excessive requests, ensuring optimal performance and preventing abuse.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Avnsh1111\\LaravelApiRateLimiter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Avinash Rathod",
+            "email": "er.avinashrathod@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0|^8.1",
+        "illuminate/support": "^8.0|^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3.3|^10.0",
+        "orchestra/testbench": "^6.0|^7.0"
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Avnsh1111\\LaravelApiRateLimiter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
