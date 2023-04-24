@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Orchestra\Testbench\TestCase;
-use Avnsh1111\LaravelApiRateLimiter\RateLimiter;
+use Avnsh1111\LaravelApiRateLimiter\LaravelApiRateLimiter;
 use Illuminate\Http\Request;
 use Avnsh1111\LaravelApiRateLimiter\Middleware\RateLimiterMiddleware;
 
@@ -28,7 +28,7 @@ class RateLimiterTest extends TestCase
                 'routes' => [], // Route names to blacklist
             ],
         ]);
-        $this->rateLimiter = app(RateLimiter::class);
+        $this->rateLimiter = app(LaravelApiRateLimiter::class);
         $this->rateLimiterMiddleware = new RateLimiterMiddleware($this->rateLimiter);
     }
 
